@@ -1,4 +1,8 @@
-"MAIN"
+""""MAIN.py
+Sundiata
+
+Pretty much just a random number generating game.
+"""
 #imports modules to tell the comupter to wait and to create a random number.
 import time
 import random
@@ -7,7 +11,7 @@ import random
 PLAYER1 = {
     "Marbles" : 5
 }
-
+#Again a dictionary to hold marbles.
 PLAYER2 = {
     "Marbles2" : 5
 }
@@ -43,16 +47,20 @@ def DecisionA():
     print("Now to get to the interesting part!")
     #tells the computer to sleep for a second. Good night!
     time.sleep(1)
+    #prints words to the console.
     print("BETTING HAHAHHAHAHHAHAH!!!!!")
     ya = input("Hey...Player1, do you wanna bet the marbles you have? Btw you start off with 5.")
+    #Another condition, if this, then do that.
     if ya == 'yes' or ya == 'y':
         PLAYER1 ["Marbles"] = PLAYER1 ["Marbles" ] - bet
         print("Alright, you roll the die and put up ", PLAYER1 ["Marbles"])
         DescisionB()
+    #See the comment above this one. You are so smart...
     if ya == 'no' or ya == 'n':
         print("Alright well since you don't want to bet, let's reveal the numbers")
         time.sleep(1)
         print("Player 2, since Player 1 didn't bet, you can't either!")
+        #calls to another function.
         Results()
 def DescisionB():
     print("Alright, now it is your turn Player 2!")
