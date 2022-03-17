@@ -1,10 +1,19 @@
 "MAIN"
 import time
 import random
+from tkinter import Place
 
 
 
 """Random Number Game"""
+
+PLAYER1 = {
+    "Marbles" : 5
+}
+
+PLAYER2 = {
+    "Marbles2" : 5
+}
 
 def StartGame():
     x = input("Hello there, Users! Would you like to play a game?")
@@ -31,7 +40,11 @@ def Decision():
     print("Now to get to the interesting part!")
     time.sleep(1)
     print("BETTING HAHAHHAHAHHAHAH!!!!!")
-    ya
+    ya = input("Hey...Player1, do you wanna bet the marbles you have? Btw you start off with 5.")
+    if ya == 'yes' or ya == 'y':
+        bet = random.randint(1,5)
+        PLAYER1 ["Marbles"] = PLAYER1 ["Marbles"]
+
 
     
 StartGame()
